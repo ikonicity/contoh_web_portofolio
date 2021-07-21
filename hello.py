@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -10,4 +10,4 @@ app = Flask(__name__)
 #def it_works():
  #   return "IT Works! nyehehe"
 def index():
-    return index.html
+    return render_template('index.html')
